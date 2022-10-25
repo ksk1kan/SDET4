@@ -17,7 +17,7 @@ public class _03_GetCssValue extends BaseDriver {
 
         System.out.println("inputValEnter.getAttribute(class) = " + inputValEnter.getAttribute("class"));
 
-        // Class ın karşığı olan CSS değerlerini almak için getCssValue kullanılır
+        // Class ı n karşığı olan CSS değerlerini almak için getCssValue kullanılır
         System.out.println("getCssValue(color) = " + inputValEnter.getCssValue("color"));
         System.out.println("getCssValue(background) = " + inputValEnter.getCssValue("background"));
         System.out.println("getCssValue(font-size) = " + inputValEnter.getCssValue("font-size"));

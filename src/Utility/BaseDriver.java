@@ -14,6 +14,7 @@ public class BaseDriver {
     static
     {
         //ilk adımda çalışan kod kısmı
+        KalanOncekileriKapat();
 
         Logger logger= Logger.getLogger(""); // sisteme ait bütün logları üreten objeye/servise ulaştım ""
         logger.setLevel(Level.SEVERE); // Sadece errorları göster
@@ -32,6 +33,15 @@ public class BaseDriver {
 
         driver.manage().timeouts().implicitlyWait(dr); // Bütün weblementlerin element bazında, elemente özel işlem yapılmadan önce
         // hazır hale gelmesi verilen mühlet yani süre. // eğer 2 sn yüklerse 30 sn. beklemez.
+    }
+
+    public static void KalanOncekileriKapat() {
+
+        try {
+            Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+        } catch (Exception ignored) {
+
+        }
     }
 
     public static void driverBekleKapat()

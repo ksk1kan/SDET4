@@ -7,6 +7,10 @@ import org.openqa.selenium.WebElement;
 
 public class _02_Navigating extends BaseDriver {
     public static void main(String[] args) {
+        // history açısından get ile navigate.to arasında bir fark yok
+        // sayfanın yüklenmesi açısından get tam yüklemeyi bekler, hatta bunun için süre sınırı koyuldu.
+        // navigate.to ise tam yüklemeyi beklemez.
+
         driver.navigate().to("https://testpages.herokuapp.com/styled/index.html"); // web sayfası açma komutu
         MyFunc.Bekle(3);
         WebElement element= driver.findElement(By.linkText("Alerts (JavaScript)"));

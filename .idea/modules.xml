@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SDET4.iml" filepath="$PROJECT_DIR$/SDET4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TestingTools.iml" filepath="$PROJECT_DIR$/TestingTools.iml" />
     </modules>
   </component>
 </project>

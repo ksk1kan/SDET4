@@ -21,11 +21,11 @@ public class BaseDriver {
         logger.setLevel(Level.SEVERE); // Sadece errorları göster
 
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");  // ChromeServici sessiz modda çalıştır
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/Utility/chromedriver.exe");
         driver = new ChromeDriver();   // web sayfasını kontrol eden görevli
         //driver.manage().window().setPosition(new Point(-1650,130));
 
-        //driver.manage().window().maximize();  // Ekranı max yapıyor.
+        driver.manage().window().maximize();  // Ekranı max yapıyor.
         driver.manage().deleteAllCookies();  // sitenin senin bilgisayarında yaptığı ayarlar siliniyor, sayfa başlangıç ayarlarına dönüyor
 
         Duration dr=Duration.ofSeconds(30);

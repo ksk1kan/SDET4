@@ -1,7 +1,6 @@
-package Gun11;
+package Gun11_Implicit_Explicit;
 
 import Utility.BaseDriver;
-import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

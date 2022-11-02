@@ -15,18 +15,24 @@ public class _01_DragAndDropBy extends BaseDriver {
         WebElement solSurgu=driver.findElement(By.xpath("//*[@id='slider-range']/span[1]"));
         //2. surgu    div[id='slider-range']>:nth-child(3)
         // solSurgu.getSize().width()
-        MyFunc.Bekle(2);
+        MyFunc.Bekle(1);
 
         Actions aksiyonlar = new Actions(driver);
 
         Action aksiyon = aksiyonlar.dragAndDropBy(solSurgu,-101,0).build();
-        MyFunc.Bekle(2);
+        MyFunc.Bekle(1);
 
         Action aksiyon2 = aksiyonlar.dragAndDropBy(solSurgu,200,0).build();
-        MyFunc.Bekle(2);
+        MyFunc.Bekle(1);
+
+
+        WebElement sagSurgu=driver.findElement(By.xpath("//*[@id=\"slider-range\"]/span[2]"));
+        Action aksiyon3 = aksiyonlar.dragAndDropBy(sagSurgu,101,0).build();
+        MyFunc.Bekle(1);
 
         aksiyon.perform();
         aksiyon2.perform();
+        aksiyon3.perform();
 
         driverBekleKapat();
 

@@ -1,4 +1,4 @@
-package Gun12;
+package Gun12_IFrame_Window_Switch;
 
 import Utility.BaseDriver;
 import Utility.MyFunc;

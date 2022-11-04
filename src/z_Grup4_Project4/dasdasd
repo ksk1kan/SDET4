@@ -1,0 +1,7 @@
+List<WebElement> iframes = driver.findElements(By.xpath("//iframe"));
+         System.out.println("iframes adedi : " + iframes.size());
+         int s = 0;
+         for (WebElement i : iframes) {
+            System.out.println("i.getAttribute(\"class\") = " + s + " : " + i.getAttribute("class"));
+            s++;
+          }

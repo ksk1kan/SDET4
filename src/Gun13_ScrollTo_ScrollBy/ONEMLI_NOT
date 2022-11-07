@@ -1,0 +1,11 @@
+Selenium da Sayfayı aşağı kaydırılması gereken durumlar vardır:
+    Bunlar , sayfa kaydırıldıkça yüklenen elemanlar için
+
+    Bu işlem javascript executer ile yapılır.Bu interface sayesinde
+    sayfa kaydırma işlemi ve javascript komutları çalıştırılabilir
+    sayfa üzerinde.
+
+    window.scrollBy(0, 3000);
+    window.scrollTo(0, document.body.scrollHeight);
+    "arguments[0].scrollIntoView(true);", elemen
+    "arguments[0].click();", element

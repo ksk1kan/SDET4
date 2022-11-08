@@ -1,4 +1,4 @@
-package Gun13_ScrollTo_ScrollBy;
+package Gun13_ScrollTo_ScrollBy_RobotClass;
 
 import Utility.BaseDriver;
 import Utility.MyFunc;

@@ -13,8 +13,6 @@ import java.util.logging.Logger;
 public class BaseDriver {
     public static WebDriver driver;
 
-    public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
     static
     {
         //ilk adımda çalışan kod kısmı
@@ -39,6 +37,8 @@ public class BaseDriver {
         //driver.manage().timeouts().implicitlyWait(dr); // Bütün weblementlerin element bazında, elemente özel işlem yapılmadan önce
         // hazır hale gelmesi verilen mühlet yani süre. // eğer 2 sn yüklerse 30 sn. beklemez.
     }
+
+    public static WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
     public static void KalanOncekileriKapat() {
 
